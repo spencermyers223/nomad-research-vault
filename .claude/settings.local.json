@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(del \"c:\\\\Users\\\\spenc\\\\nomad-discord-bot\\\\commands\\\\defi\\\\hyperliquid.js\")",
-      "WebSearch",
-      "Bash(del \"C:\\\\Users\\\\spenc\\\\nomad-research-vault\\\\00-radar\\\\hyperliquid.md\")"
-    ]
-  }
-}
