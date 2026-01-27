@@ -1,0 +1,21 @@
+Create a deep-dive research document for the protocol: {{protocol}}
+
+## Instructions
+
+1. Read the template structure from `_templates/shortlist-deep-dive-template.docx` using mammoth/node to understand the format
+
+2. Research "{{protocol}}" using web search to gather:
+   - What the protocol does and how it works
+   - Market/sector data (TAM, competitors, market share)
+   - Current metrics (TVL, volume, revenue, users)
+   - Tokenomics (utility, supply, distribution, vesting, value accrual)
+   - Team and backers
+   - Risks and upcoming catalysts
+
+3. Determine the category (e.g., perp-dex, lending, liquid-staking)
+
+4. Generate the .docx file at `01-shortlist/[category]/[protocol].docx` using the docx npm package, matching the template structure
+
+5. Remove the protocol from `00-radar/radar-list.docx`
+
+6. Confirm: where file was saved, key metrics found, and that radar was updated
