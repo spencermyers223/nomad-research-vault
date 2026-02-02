@@ -1,0 +1,193 @@
+NOMAD RESEARCH — DEEP DIVE
+
+Protocol: MakerDAO
+Ticker: $MKR
+Chain: Ethereum
+Category: Stablecoin / CDP Lending
+Date: 2026-02-02
+Status: Protocol of the Day
+
+═══════════════════════════════════════
+EXECUTIVE SUMMARY
+───────────────────────────────────────
+MakerDAO is the decentralized autonomous organization behind DAI, the largest decentralized stablecoin with ~$5B supply. The protocol pioneered collateralized debt positions (CDPs) where users lock crypto assets to mint DAI. MKR token holders govern risk parameters and serve as the backstop — MKR is diluted to cover bad debt. The protocol has expanded into Real World Assets (RWAs), with $2B+ in US Treasuries and corporate bonds as collateral, generating significant yield.
+
+═══════════════════════════════════════
+THE OPPORTUNITY
+───────────────────────────────────────
+What is MakerDAO?
+MakerDAO operates a collateralized debt position (CDP) system, branded as 'Vaults.' Users deposit crypto collateral (ETH, WBTC, stETH, USDC, RWAs) and can mint DAI stablecoins against it at a minimum 150% collateralization ratio. The system maintains DAI's $1 peg through several mechanisms:
+
+1. Overcollateralization: All DAI is backed by >150% collateral value
+2. Stability Fees: Variable interest rates on borrowed DAI (currently 5-15% depending on vault type)
+3. DAI Savings Rate (DSR): Yield on deposited DAI to manage supply/demand (currently ~5%)
+4. Liquidations: Automated auctions when collateral falls below threshold
+5. Emergency Shutdown: Ultimate backstop allowing DAI holders to redeem collateral
+
+The protocol is governed by MKR holders who vote on risk parameters, collateral types, fee rates, and protocol upgrades.
+
+The Market
+Total Stablecoin Market: ~$150B (dominated by USDT $95B, USDC $32B)
+Decentralized Stablecoin Market: ~$8B (DAI leads with $5B, 60%+ share)
+DeFi Lending TVL: ~$50B across all protocols
+MakerDAO Market Share: 28% of DeFi lending TVL (second only to Lido in total DeFi TVL)
+
+Key Competitors:
+- Liquity (LUSD): $400M supply, 0% interest, ETH-only collateral
+- Frax (FRAX): $700M supply, partially algorithmic
+- Aave GHO: $100M supply, newer entrant
+- Ethena (USDe): $2B supply, delta-neutral synthetic (different model)
+
+MakerDAO maintains dominance through first-mover advantage, deepest liquidity, widest DeFi integrations, and institutional-grade RWA exposure.
+
+═══════════════════════════════════════
+THE PROTOCOL
+───────────────────────────────────────
+How It Works
+Core Mechanism (Vault System):
+1. User deposits collateral into a Vault (e.g., 10 ETH worth $25,000)
+2. User can mint DAI up to the collateral's borrowing limit (e.g., $15,000 DAI at 150% ratio)
+3. User pays Stability Fee (interest) on outstanding DAI debt
+4. To close vault, user repays DAI + accumulated fees and withdraws collateral
+5. If collateral value drops below liquidation ratio, vault is auctioned
+
+Oracle System:
+- Chainlink + MakerDAO's own oracles provide price feeds
+- 1-hour delay on price changes for liquidation (prevents flash crash exploits)
+- Oracle Security Module (OSM) adds additional safety buffer
+
+Liquidation Process:
+- Liquidation ratio varies by collateral (typically 145-175%)
+- Dutch auction system for liquidated collateral
+- 13% liquidation penalty goes to protocol surplus
+- Keepers (bots) compete to trigger liquidations
+
+DAI Stability Mechanisms:
+- DAI > $1: Lower DSR, raise stability fees → reduce DAI demand/increase supply
+- DAI < $1: Raise DSR, lower stability fees → increase DAI demand/reduce supply
+- Peg Stability Module (PSM): Direct 1:1 swap with USDC (controversial but effective)
+
+Competitive Advantage
+1. First Mover & Battle-Tested: Launched 2017, survived multiple market crashes (March 2020 'Black Thursday,' 2022 bear market). No exploits of core protocol.
+
+2. Network Effects: DAI is the most integrated stablecoin in DeFi. Used as base pair on Uniswap, Curve, Aave, Compound. Deep liquidity = low slippage.
+
+3. Decentralization: No admin keys, no off-switch. More decentralized than USDC/USDT (centralized issuers) and algorithmic stables (single points of failure).
+
+4. RWA Innovation: Pioneered bringing US Treasuries on-chain. $2B+ in RWAs generating 4-5% yield, passed to DAI holders via DSR.
+
+5. Institutional Grade: BlockTower, Monetalis, Huntingdon Valley Bank have formal RWA arrangements. Regulatory clarity (not a security per SEC guidance).
+
+6. Governance Legitimacy: Active governance with 50+ MKR holders regularly voting. Delegate system for passive holders. Transparent on-chain execution.
+
+Traction & Metrics
+  TVL: $5.8B — #2 in DeFi behind Lido ($20B)
+  DAI Supply: ~$5B — Largest decentralized stablecoin
+  Annual Revenue: $150M+ — From stability fees + RWA yield
+  Protocol Surplus: $80M+ — Treasury buffer before MKR burns
+  RWA Collateral: $2.1B — US Treasuries, corporate bonds
+  Vault Count: ~15,000 — Active debt positions
+  Market Share: 28% — Of DeFi lending TVL
+  DSR Deposits: $1.2B — DAI earning savings rate
+
+═══════════════════════════════════════
+TOKENOMICS
+───────────────────────────────────────
+Token Utility
+MKR serves three functions:
+
+1. Governance: Vote on all protocol parameters including:
+   - Collateral types and risk parameters
+   - Stability fees and DSR rates
+   - Protocol upgrades and treasury allocation
+   - RWA partner approvals
+
+2. Backstop (Lender of Last Resort): If liquidations don't cover bad debt, new MKR is minted and auctioned to cover the shortfall. This dilutes MKR holders, aligning incentives with proper risk management.
+
+3. Value Accrual: Protocol surplus is used to buy back and burn MKR. This creates deflationary pressure when the protocol is profitable. Over $50M in MKR has been burned historically.
+
+Supply & Distribution
+  Initial Distribution (2017): 1,000,000 MKR — Sold to early backers
+  Burned (Cumulative): ~22,000 MKR — From surplus auctions
+  Foundation/DAO: ~84,000 MKR — Treasury holdings
+  Current Supply: ~977,000 MKR — Deflationary
+
+Current circulating: ~900,000 MKR (fully unlocked, no vesting)
+Max supply: No hard cap (can mint for debt auctions), but deflationary in normal operations
+Inflation rate: Net deflationary when protocol is profitable
+Upcoming unlocks: None — MKR was fully distributed in 2017
+
+Value Accrual
+Revenue flows:
+1. Stability Fees from Vaults → Protocol Surplus
+2. RWA Yield → Protocol Surplus (or DSR distribution)
+3. Liquidation Penalties → Protocol Surplus
+
+Once surplus exceeds buffer target ($50M), excess is used to buy and burn MKR via Surplus Auctions. In 2024-2025, strong RWA yields have accelerated burns. Current burn rate: ~5,000 MKR/year at current revenue levels.
+
+Sky/Endgame Transition: MKR can be converted to SKY at 1:24,000 ratio. Some governance moving to SKY tokens, but MKR remains valid and continues burning.
+
+═══════════════════════════════════════
+TEAM & BACKERS
+───────────────────────────────────────
+Team
+MakerDAO Foundation (dissolved 2021): Originally led by Rune Christensen (founder, still active in governance).
+
+Current Structure: Fully decentralized, operated through Core Units (teams funded by governance):
+- Protocol Engineering: Smart contract development
+- Risk: Collateral onboarding and risk assessment
+- Oracles: Price feed infrastructure
+- Growth: Business development, RWA partnerships
+
+Key Contributors: Recognized delegates and domain experts guide governance but no single team controls the protocol.
+
+Investors
+Original Backers (2017): Andreessen Horowitz (a16z), Polychain Capital, 1confirmation, Distributed Capital Partners.
+
+No recent raises — MakerDAO is fully bootstrapped via protocol revenue. The $80M+ surplus buffer acts as treasury. RWA partners (BlockTower, Monetalis) are counterparties, not investors.
+
+Community & Governance
+- Twitter: @MakerDAO — 280K followers
+- Discord: ~25,000 members
+- Governance Forum: forum.makerdao.com — 500+ active posters
+- Governance Participation: ~50 MKR holders vote regularly, ~$100M in delegated MKR
+
+Developer Activity: Core protocol is stable (minimal changes needed). Focus shifted to SubDAOs (Spark for lending), RWA integration, and Layer 2 expansion.
+
+═══════════════════════════════════════
+RISKS
+───────────────────────────────────────
+Regulatory Risk (MEDIUM)
+Stablecoins face increasing regulatory scrutiny. However, DAI's decentralized nature provides some protection compared to USDC/USDT. RWA arrangements with US banks suggest growing regulatory acceptance. EU MiCA regulations may require compliance adjustments.
+
+Smart Contract Risk (LOW)
+Core contracts are 6+ years old and heavily audited. No major exploits. However, new modules (RWA adapters, PSM) expand attack surface. $5B+ TVL makes it a constant target.
+
+Collateral Risk (MEDIUM)
+Heavy reliance on USDC in PSM creates centralization risk — Circle could blacklist MakerDAO. RWAs introduce counterparty risk (what if BlockTower fails?). Protocol has reduced USDC exposure but still significant.
+
+Competition Risk (MEDIUM)
+Ethena's USDe grew to $2B in months with higher yields. Aave GHO gaining traction. If competitor stablecoin achieves better DeFi integrations or higher yield sustainably, DAI could lose market share.
+
+Governance Risk (LOW)
+Governance is slow and contentious at times. Sky/Endgame transition has divided community. However, this deliberation also prevents rash decisions. No single entity can override governance.
+
+═══════════════════════════════════════
+CATALYSTS & TIMELINE
+───────────────────────────────────────
+  DSR Yield Increases | Q1-Q2 2026 | Higher DSR attracts more DAI deposits, bullish for ecosystem
+  Layer 2 Expansion | 2026 | Native DAI on Arbitrum, Optimism, Base increases utility
+  RWA Growth | Ongoing | More TradFi yield → higher protocol revenue → more MKR burns
+  Sky/Endgame Completion | 2026-2027 | SubDAO launches, new tokenomics clarity
+  ETF Approval Spillover | 2026 | Institutional interest in DeFi blue chips like MKR
+
+═══════════════════════════════════════
+SOURCES
+───────────────────────────────────────
+• MakerDAO Official Docs: makerdao.com/docs
+• MakerDAO Governance Forum: forum.makerdao.com
+• DefiLlama TVL Data: defillama.com/protocol/makerdao
+• Dune Analytics Dashboards: dune.com/browse/dashboards?q=makerdao
+• MakerBurn Stats: makerburn.com
+• Token Terminal Revenue: tokenterminal.com/terminal/projects/makerdao
+• RWA Monitor: rwa.makerdao.com
