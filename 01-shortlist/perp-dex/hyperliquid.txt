@@ -1,0 +1,152 @@
+NOMAD RESEARCH — DEEP DIVE
+
+Protocol: Hyperliquid
+Ticker: HYPE
+Chain: Hyperliquid L1 (Custom)
+Category: Perp DEX
+Date: 2026-02-02
+Status: Shortlist
+
+═══════════════════════════════════════════════════════════════════
+
+EXECUTIVE SUMMARY
+─────────────────────────────────────────────────────────────────────
+Hyperliquid is a high-performance perpetual futures DEX operating on its own custom L1 blockchain. It dominates the on-chain perps market with ~70% market share and processes billions in daily volume with CEX-level performance (sub-second finality). Notably bootstrapped without VC funding, with one of the largest community airdrops in crypto history.
+
+═══════════════════════════════════════════════════════════════════
+
+THE OPPORTUNITY
+─────────────────────────────────────────────────────────────────────
+
+What is Hyperliquid?
+Hyperliquid is a fully on-chain order book perpetual futures exchange. Unlike AMM-based perp DEXs, it uses a traditional limit order book model that provides CEX-like trading experience with DeFi's self-custody benefits. The protocol built its own L1 (HyperBFT consensus) specifically optimized for trading, achieving 100k+ TPS with sub-second finality.
+
+The Market
+The perpetual futures market is the largest segment in crypto trading, with centralized exchanges processing $50-100B+ daily. On-chain perps represent <5% of this volume but are growing rapidly as traders seek non-custodial alternatives post-FTX. Hyperliquid's main competitors include GMX, dYdX, and Drift, but HL has captured dominant market share through superior UX.
+
+═══════════════════════════════════════════════════════════════════
+
+THE PROTOCOL
+─────────────────────────────────────────────────────────────────────
+
+How It Works
+- Custom L1 blockchain (HyperBFT) optimized for trading
+- Fully on-chain order book (not off-chain matching)
+- Sub-second block times, ~100k TPS capacity
+- Native bridge from Arbitrum (USDC deposits)
+- HLP (Hyperliquid Liquidity Provider) vault for market making
+- Spot trading launched via HIP-1 token standard
+
+Competitive Advantage
+1. Performance: Only perp DEX with true CEX-like speed
+2. No VC: Community-owned, no insider dumps
+3. Full stack: Own L1 means no gas competition
+4. UX: Clean interface, one-click trading
+5. Network effects: Liquidity begets liquidity
+
+Traction & Metrics
+┌─────────────────┬─────────────────┬─────────────────────────────────┐
+│ Metric          │ Value           │ Context                         │
+├─────────────────┼─────────────────┼─────────────────────────────────┤
+│ Bridged TVL     │ ~$4.0B          │ USDC bridged from Arbitrum      │
+│ L1 Native TVL   │ ~$436M          │ Native liquidity on Hyper L1    │
+│ Daily Volume    │ $5-10B          │ Varies with market conditions   │
+│ Market Share    │ ~70%            │ Dominant in on-chain perps      │
+│ HYPE Price      │ ~$25.85         │ All-time high was ~$35          │
+│ Market Cap      │ ~$6.16B         │ Circulating supply              │
+│ FDV             │ ~$24.9B         │ 1B max supply                   │
+└─────────────────┴─────────────────┴─────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+
+TOKENOMICS
+─────────────────────────────────────────────────────────────────────
+
+Token Utility
+- Staking: Secure HyperBFT consensus
+- Governance: Protocol parameter votes
+- Fee discounts: Reduced trading fees
+- HIP-1 launches: Required for new token listings
+
+Supply & Distribution
+┌─────────────────────────────────────┬─────────────┬─────────────────────┐
+│ Category                            │ Allocation  │ Notes               │
+├─────────────────────────────────────┼─────────────┼─────────────────────┤
+│ Community Airdrop (Genesis)         │ 31%         │ Largest airdrop ever│
+│ Future Emissions & Rewards          │ 38.888%     │ Community incentives│
+│ Core Contributors                   │ 23.8%       │ Team allocation     │
+│ Hyper Foundation                    │ 6.0%        │ Ecosystem grants    │
+│ Community Grants                    │ 0.3%        │ Builder incentives  │
+└─────────────────────────────────────┴─────────────┴─────────────────────┘
+
+Total Supply: 1,000,000,000 HYPE
+Current Circulating: ~238M (~24%)
+
+Value Accrual
+- Trading fees flow to HLP vault and stakers
+- Protocol revenue from liquidations
+- Potential for fee sharing with HYPE stakers
+
+═══════════════════════════════════════════════════════════════════
+
+TEAM & BACKERS
+─────────────────────────────────────────────────────────────────────
+
+Team
+- Jeff Yan (Co-founder): Harvard math, former HFT at Hudson River Trading
+- Team is pseudonymous but has proven technical chops
+- Small, focused team (~15 people estimated)
+
+Investors
+NO VC FUNDING. This is extremely rare for a protocol of this size.
+- Fully community-funded and bootstrapped
+- No insider token unlocks to worry about
+- Airdrop went directly to users, not investors
+
+Community & Governance
+- Active Discord with 200k+ members
+- Strong crypto Twitter presence
+- HIP proposal system for governance
+
+═══════════════════════════════════════════════════════════════════
+
+RISKS
+─────────────────────────────────────────────────────────────────────
+
+Smart Contract / Bridge Risk (MEDIUM)
+Custom L1 and bridge are novel code. Any exploit could drain funds.
+
+Regulatory Risk (HIGH)
+Perp DEXs are under increasing scrutiny. US users technically restricted.
+
+Competition Risk (MEDIUM)
+dYdX v4 and other L1 perp chains are launching. Network effects matter.
+
+Centralization Risk (MEDIUM)
+Validator set is still small. Team has significant influence.
+
+Market Risk (HIGH)
+Perp volumes correlate with crypto volatility. Bear markets = lower fees.
+
+═══════════════════════════════════════════════════════════════════
+
+CATALYSTS & TIMELINE
+─────────────────────────────────────────────────────────────────────
+┌─────────────────────────────────┬─────────────────┬─────────────────┐
+│ Catalyst                        │ Expected        │ Impact          │
+├─────────────────────────────────┼─────────────────┼─────────────────┤
+│ Spot trading expansion          │ Ongoing         │ Medium          │
+│ More HIP-1 token launches       │ Q1 2026         │ High            │
+│ Validator decentralization      │ Q2 2026         │ Medium          │
+│ Builder ecosystem growth        │ 2026            │ High            │
+│ Potential CEX listings          │ TBD             │ Medium          │
+└─────────────────────────────────┴─────────────────┴─────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+
+SOURCES
+─────────────────────────────────────────────────────────────────────
+• DefiLlama: https://defillama.com/protocol/hyperliquid
+• Hyperliquid Docs: https://hyperliquid.gitbook.io/
+• Hyperliquid App: https://app.hyperliquid.xyz
+• HYPE Token Info: https://www.coingecko.com/en/coins/hyperliquid
