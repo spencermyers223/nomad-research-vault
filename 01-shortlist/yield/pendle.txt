@@ -1,0 +1,175 @@
+NOMAD RESEARCH — DEEP DIVE
+
+Protocol: Pendle
+Ticker: PENDLE
+Chain: Ethereum, Arbitrum, Base, Optimism, BSC, Sonic, Berachain, HyperEVM
+Category: Yield Tokenization
+Date: 2026-02-03
+Status: Shortlist
+
+═══════════════════════════════════════════════════════════════════
+
+EXECUTIVE SUMMARY
+─────────────────────────────────────────────────────────────────────
+Pendle is the leading yield tokenization protocol, enabling users to split yield-bearing assets into principal tokens (PT) and yield tokens (YT), tradeable on a custom time-decay AMM. With ~$3B TVL and recently announced tokenomics upgrade (vePENDLE → sPENDLE), Pendle is positioning itself as DeFi's fixed-income infrastructure layer.
+
+═══════════════════════════════════════════════════════════════════
+
+THE OPPORTUNITY
+─────────────────────────────────────────────────────────────────────
+
+What is Pendle?
+Pendle enables the tokenization and trading of future yield. Users can:
+- Earn FIXED yield by buying Principal Tokens (PT) at a discount
+- Speculate on VARIABLE yield by buying Yield Tokens (YT)
+- Provide liquidity in Pendle's AMM pools designed for time-decay assets
+
+The protocol wraps yield-bearing assets (stETH, aUSDC, etc.) and splits them into:
+- PT (Principal Token): Redeemable 1:1 for underlying at maturity
+- YT (Yield Token): Receives all yield until maturity
+
+The Market
+- Total DeFi TVL: ~$100B globally
+- Fixed-income TradFi market: $130T
+- Yield tokenization TAM: Potentially multi-trillion as DeFi/TradFi convergence accelerates
+- Pendle market share: Dominant in yield tokenization vertical (~90%+)
+- Key competitors: Notional (fixed-rate lending), Element Finance (deprecated)
+
+═══════════════════════════════════════════════════════════════════
+
+THE PROTOCOL
+─────────────────────────────────────────────────────────────────────
+
+How It Works
+1. Standardized Yield (SY): Wraps yield-bearing tokens into standard interface
+2. PT/YT Split: SY tokens split into Principal and Yield components
+3. AMM: Custom constant-product AMM with time-decay curve (converges PT → underlying at maturity)
+4. Markets: Each pool has specific maturity date (e.g., Dec 2026 stETH)
+
+Key Innovation: The AMM is designed specifically for assets that decay toward a known value over time, solving the unique challenge of trading yield.
+
+Competitive Advantage
+- First mover in yield tokenization with production-grade product
+- Custom AMM designed for time-decay assets (no other protocol has this)
+- Multi-chain deployment (8+ chains including new chains like Sonic, Berachain)
+- Strong integrations with major LST/LRT protocols (Lido, Renzo, Etherfi, etc.)
+- New Boros product: First on-chain perpetual funding rate tokenization
+
+Traction & Metrics
+┌─────────────────┬─────────────────┬─────────────────────────────────┐
+│ Metric          │ Value           │ Context                         │
+├─────────────────┼─────────────────┼─────────────────────────────────┤
+│ TVL             │ ~$3B            │ 60x revenue growth in 2 years   │
+│ Revenue (2025)  │ $37M+           │ Fee efficiency >1 (rev>emissions)│
+│ Chains          │ 8+              │ ETH, ARB, BASE, OP, BSC, Sonic..│
+│ vePENDLE Locked │ ~20% of supply  │ Low participation (improving)   │
+│ Market Share    │ ~90%+           │ Dominant in yield tokenization  │
+└─────────────────┴─────────────────┴─────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+
+TOKENOMICS
+─────────────────────────────────────────────────────────────────────
+
+Token Utility
+1. sPENDLE (NEW - replacing vePENDLE):
+   - Liquid staking token with 14-day withdrawal period
+   - Receives protocol revenue via PENDLE buybacks
+   - Governance voting rights
+   - No more multi-year locks required
+
+2. Legacy vePENDLE (being deprecated):
+   - Vote-escrowed PENDLE with 2-year max lock
+   - LP boost and voting power
+   - Existing holders get up to 4x sPENDLE boost
+
+Supply & Distribution
+┌─────────────────────────────────┬─────────────────┬─────────────────────┐
+│ Category                        │ Allocation      │ Notes               │
+├─────────────────────────────────┼─────────────────┼─────────────────────┤
+│ Team                            │ 22%             │ Vested over time    │
+│ Ecosystem Fund                  │ 16%             │ Protocol incentives │
+│ Liquidity Incentives            │ 37%             │ Emissions (reducing)│
+│ Investors                       │ 15%             │ Early backers       │
+│ Public                          │ 10%             │ IDO + LBP           │
+└─────────────────────────────────┴─────────────────┴─────────────────────┘
+
+Current circulating: ~250M PENDLE
+Max supply: 258.4M PENDLE (w/ 2% annual inflation cap)
+Inflation: Capped at 2% per year post-2026
+
+Value Accrual (New sPENDLE Model)
+- 80% of protocol revenue → PENDLE buybacks → distributed to sPENDLE holders
+- 3% swap fees on AMM trades
+- Yield fees on PT/YT
+- New algorithmic emissions model: ~30% reduction in emissions
+- Boros: Additional revenue from funding rate tokenization
+
+═══════════════════════════════════════════════════════════════════
+
+TEAM & BACKERS
+─────────────────────────────────────────────────────────────────────
+
+Team
+- TN Lee: Co-Founder & CEO, former Kyber Network
+- Vu Nguyen: Co-Founder, engineering background
+- Team is doxxed, Singapore-based
+- Strong track record (shipping consistently since 2021)
+
+Investors
+- Binance Labs (YZi Labs)
+- Mechanism Capital
+- Spartan Group
+- HashKey Capital
+- Alliance DAO
+
+Community & Governance
+- Twitter: 200K+ followers
+- Discord: Active community
+- Governance: Transitioning from vePENDLE voting to sPENDLE governance
+- Developer activity: Consistent shipping (V2 launch, multi-chain, Boros)
+
+═══════════════════════════════════════════════════════════════════
+
+RISKS
+─────────────────────────────────────────────────────────────────────
+
+Smart Contract Risk (MEDIUM)
+Pendle V2 has been live since 2023 with no major exploits. However, complexity of PT/YT mechanics and AMM creates larger attack surface than simple protocols.
+
+Competition Risk (LOW-MEDIUM)
+Currently dominant, but yield tokenization is a large opportunity. Bigger players could enter. However, Pendle's AMM innovation is hard to replicate.
+
+Liquidity Risk (MEDIUM)
+Thin liquidity for longer-dated markets. A Medium article noted $8M liquidity in Sep 2026 pool with 5% slippage on $100K trade. Scaling to institutional sizes remains a challenge.
+
+Token Transition Risk (LOW)
+vePENDLE → sPENDLE transition is complex. Execution risk during migration period. However, team has clear plan and timeline.
+
+Yield Compression Risk (MEDIUM)
+If DeFi yields compress significantly, demand for yield tokenization decreases. Boros (funding rate tokenization) helps diversify beyond traditional yields.
+
+═══════════════════════════════════════════════════════════════════
+
+CATALYSTS & TIMELINE
+─────────────────────────────────────────────────────────────────────
+┌─────────────────────────────────┬─────────────────┬─────────────────┐
+│ Catalyst                        │ Expected        │ Impact          │
+├─────────────────────────────────┼─────────────────┼─────────────────┤
+│ sPENDLE Launch                  │ Jan 20, 2026    │ HIGH - Done     │
+│ vePENDLE Locks Paused           │ Jan 29, 2026    │ MEDIUM - Done   │
+│ Algorithmic Emissions Model     │ Q1 2026         │ HIGH            │
+│ Boros Full Launch               │ Q1-Q2 2026      │ HIGH            │
+│ TradFi Integrations             │ 2026            │ VERY HIGH       │
+│ New Chain Deployments           │ Ongoing         │ MEDIUM          │
+└─────────────────────────────────┴─────────────────┴─────────────────┘
+
+═══════════════════════════════════════════════════════════════════
+
+SOURCES
+─────────────────────────────────────────────────────────────────────
+• Pendle Documentation: https://docs.pendle.finance/
+• Medium - Introducing sPENDLE: https://medium.com/pendle/introducing-spendle-8479744dfdf8
+• DefiLlama: https://defillama.com/protocol/pendle
+• CoinGecko: https://www.coingecko.com/en/coins/pendle
+• Pendle Official Site: https://www.pendle.finance/
